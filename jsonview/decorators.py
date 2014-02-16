@@ -17,7 +17,7 @@ from .exceptions import BadRequest
 json = import_module(getattr(settings, 'JSON_MODULE', 'json'))
 JSON = 'application/json'
 logger = logging.getLogger('django.request')
-logger.info('Using %s JSON module.', json.__name__)
+# logger.info('Using %s JSON module.', json.__name__)
 
 
 def json_view(f):
